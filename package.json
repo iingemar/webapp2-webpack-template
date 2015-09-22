@@ -1,0 +1,17 @@
+{
+  "name": "webapp2-webpack-template",
+  "version": "1.0.0",
+  "description": "Webapp2 and webpack template project.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ingemar (iingemar@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^0.18.0",
+    "jquery": "^2.1.4",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.2"
+  }
+}

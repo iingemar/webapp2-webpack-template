@@ -1,0 +1,20 @@
+# Start server
+/home/ingemar.hjalmstad/bin/google_appengine/dev_appserver.py webapp2-webpack-template/
+
+# Deploy live
+/home/ingemar.hjalmstad/bin/google_appengine/appcfg.py -A [APPSPOT_PROJECT_NAME] update webapp2-webpack-template/
+
+--
+
+# Create package.json
+npm init
+
+# Add new package and update package.json
+npm install style-loader --save
+
+# List npm dependencies
+npm list --depth=0
+
+# Install npm dependencies from package.json
+npm install
+
