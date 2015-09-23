@@ -1,20 +1,34 @@
+1. Create virtual environment
+virtualenv venv
+
+2. Start virtual environment
+source venv/bin/activate
+
+3. Install all python requirements
+pip install -r requirements.txt
+
+4. Install all npm requirements
+npm install
+
+Should install ..
+├── babel-loader@5.3.2
+├── jquery@2.1.4
+├── jsx-loader@0.13.2
+├── react@0.13.3
+├── webpack@1.12.2
+└── webpack-dev-server@1.11.0
+
+5. Start server (from one dir above)
+/home/ingemar.hjalmstad/bin/google_appengine/dev_appserver.py webapp2-webpack-template/
+
+6. Start webpack watcher in another terminal
+webpack --watch
+
+--
+
 # Start server
 /home/ingemar.hjalmstad/bin/google_appengine/dev_appserver.py webapp2-webpack-template/
 
 # Deploy live
 /home/ingemar.hjalmstad/bin/google_appengine/appcfg.py -A [APPSPOT_PROJECT_NAME] update webapp2-webpack-template/
-
---
-
-# Create package.json
-npm init
-
-# Add new package and update package.json
-npm install style-loader --save
-
-# List npm dependencies
-npm list --depth=0
-
-# Install npm dependencies from package.json
-npm install
 
