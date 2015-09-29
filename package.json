@@ -9,6 +9,7 @@
   "author": "Ingemar (iingemar@gmail.com)",
   "license": "ISC",
   "dependencies": {
+    "backbone": "^1.2.3",
     "css-loader": "^0.18.0",
     "jquery": "^2.1.4",
     "style-loader": "^0.12.4",

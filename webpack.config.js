@@ -15,6 +15,9 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
           "_": "underscore"
+        }),
+        new webpack.ProvidePlugin({
+          "Backbone": "backbone"
         })
     ],
     module: {
