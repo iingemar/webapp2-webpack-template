@@ -7,17 +7,19 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
-            minimize: true
+            minimize: true,
+            compress: false,
+            mangle: false
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
         }),
         new webpack.ProvidePlugin({
-          "_": "underscore"
+            "_": "underscore"
         }),
         new webpack.ProvidePlugin({
-          "Backbone": "backbone"
+            "Backbone": "backbone"
         })
     ],
     module: {
