@@ -1,5 +1,6 @@
 var content = require("./content.js");
 var otherContent = require("./otherContent.js");
+var indexTemplate = require("text!./templates/index.html");
 
 document.write(content + otherContent);
 
@@ -17,6 +18,8 @@ var IndexView = Backbone.View.extend({
 
     render: function(){
         console.log('render');
+        var compiledTemplate = _.template(indexTemplate);
+        this.$el.html(compiledTemplate);
     },
 
     click: function() {
